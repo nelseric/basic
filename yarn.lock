@@ -896,7 +896,7 @@ babel-runtime@6.11.6:
     core-js "^2.4.0"
     regenerator-runtime "^0.9.5"
 
-babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
+babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.9.0, babel-runtime@^6.9.1, babel-runtime@^6.9.2:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.18.0.tgz#0f4177ffd98492ef13b9f823e9994a02584c9078"
   dependencies:
@@ -2595,6 +2595,10 @@ is-ci@^1.0.9:
   dependencies:
     ci-info "^1.0.0"
 
+is-dom@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/is-dom/-/is-dom-1.0.5.tgz#3b4f9eaa7a6014c010b276c645cad85bb3c7b1fd"
+
 is-dotfile@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-dotfile/-/is-dotfile-1.0.2.tgz#2c132383f39199f8edc268ca01b9b007d205cc4d"
@@ -4238,6 +4242,13 @@ react-dom@^15.4.1:
     fbjs "^0.8.1"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
+
+react-inspector@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-1.1.1.tgz#e5e413e516f6b27f2e90d86c2088cb2bf496a0e6"
+  dependencies:
+    babel-runtime "^6.9.2"
+    is-dom "^1.0.5"
 
 react-router@4.0.0-alpha.6:
   version "4.0.0-alpha.6"
