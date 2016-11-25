@@ -27,7 +27,7 @@ const NoMatch = ({location}) => {
 class App extends Component {
   render() {
     return (
-      <BrowserRouter baseName="/basic">
+      <BrowserRouter basename="/basic">
         <div className="App">
           <div className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
