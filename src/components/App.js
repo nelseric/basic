@@ -1,28 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Match, Miss, Link } from 'react-router'
 
-import Inspector from 'react-inspector';
-
 import Hello from './Hello';
+import NoMatch from './NoMatch';
+import Home from './Home';
 
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
 
 
-const Home = ({location}) => {
-  return (
-    <h3>Welcome to my game.</h3>
-  );
-}
-
-const NoMatch = ({location}) => {
-  return (
-    <div>
-      <h3>There's nothing here.</h3>
-      <Inspector data={location} />
-    </div>
-  )
-}
 
 class App extends Component {
   render() {
@@ -46,11 +32,11 @@ class App extends Component {
               </li>
             </ul>
           </div>
-          <p className="App-intro">
+          <div className="App-intro">
             <Match pattern='/' exactly component={Home}/>
             <Match pattern='/hello' component={Hello}/>
             <Miss component={NoMatch} />
-          </p>
+          </div>
         </div>
       </BrowserRouter>
     );

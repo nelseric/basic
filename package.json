@@ -4,8 +4,15 @@
   "private": true,
   "homepage": "https://nelseric.github.io/basic",
   "devDependencies": {
+    "enzyme": "^2.6.0",
     "gh-pages": "^0.12.0",
-    "react-scripts": "0.7.0"
+    "react-addons-test-utils": "^15.4.1",
+    "react-scripts": "0.7.0",
+    "eslint": "^3.11.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0"
   },
   "dependencies": {
     "history": "^4.4.0",
@@ -21,7 +28,11 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "extends": "airbnb",
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "no-restricted-syntax": 0
   }
 }
