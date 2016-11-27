@@ -1,8 +1,7 @@
 import React from 'react';
 
-const Home = ({location}) => {
-  return (
-    <h3>Welcome to my game.</h3>
-  );
-}
+const Home = () => (
+  <h3>Welcome to my game.</h3>
+);
 
+export default Home;

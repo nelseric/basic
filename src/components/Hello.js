@@ -1,7 +1,5 @@
 import React from 'react';
 
-export default (props) => {
-  return (
-    <h1>Hello</h1>
-  )
-}
+export default () => (
+  <h1>Hello</h1>
+);

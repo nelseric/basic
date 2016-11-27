@@ -26,13 +26,24 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint ."
   },
-  "extends": "airbnb",
-  "env": {
-    "jest": true
-  },
-  "rules": {
-    "no-restricted-syntax": 0
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "rules": {
+      "no-restricted-syntax": 0,
+      "react/forbid-prop-types": 0,
+      "react/jsx-filename-extension": [1, {
+        "extensions": [".js"]
+      }],
+      "import/no-extraneous-dependencies": ["error", {
+        "devDependencies": ["**/*.test.js", "**/*.spec.js"]
+      }]
+    }
   }
 }
